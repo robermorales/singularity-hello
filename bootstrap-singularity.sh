@@ -1,4 +1,6 @@
 #!/bin/sh
 
-sudo singularity create -s 4096 singularity.img
+sudo apt install debootstrap
+
+sudo singularity create singularity.img
 sudo singularity bootstrap singularity.img singularity.def
