@@ -1,0 +1,7 @@
+language: python
+python:
+  - "3.6"
+install:
+  - sh install-singularity.sh
+script:
+  - sh bootstrap-singularity.sh
