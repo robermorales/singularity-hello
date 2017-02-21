@@ -1,4 +1,6 @@
 #!/bin/sh
 
-sudo singularity create singularity.img
-sudo singularity bootstrap singularity.img singularity.def
+image=`basename $PWD`-`date -Is -u`.img
+
+sudo singularity create $image
+sudo singularity bootstrap $image singularity.def
