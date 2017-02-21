@@ -6,3 +6,5 @@ install:
   - sh install-singularity.sh
 script:
   - sh bootstrap-singularity.sh
+addons:
+  artifacts: true
