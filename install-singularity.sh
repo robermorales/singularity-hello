@@ -8,4 +8,6 @@ cd singularity-$VERSION
 make
 sudo make install
 
-sudo apt-get install -y debootstrap
+rm -rf singularity-$VERSION
+
+sudo apt-get install -y -q debootstrap
